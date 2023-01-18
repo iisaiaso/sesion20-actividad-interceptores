@@ -4,15 +4,15 @@
 <div class="flex items-center justify-center">
 	<div class="container">
 		<table class="w-full flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5">
-			<thead class="text-white">
+			<thead class="text-white"> 
 				<tr class="bg-teal-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0" *ngFor="let post of showPosts">
-					<th class="p-3 text-left">ID</th>
-					<th class="p-3 text-left">Titulo</th>
-					<th class="p-3 text-left w-[60%]">Body</th>
+					<th class="p-3 text-center">ID</th>
+					<th class="p-3 text-center">Titulo</th>
+					<th class="p-3 text-center w-[60%]">Body</th>
 				</tr>
 			</thead>
 			<tbody class="flex-1 sm:flex-none">
-				<tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0" *ngFor="let post of showPosts">
+				<tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0 hover:hover:bg-gray-300" *ngFor="let post of showPosts">
 					<td class="border-grey-light border hover:bg-gray-100 p-3">{{ post.id }}</td>
 					<td class="border-grey-light border hover:bg-gray-100 p-3">{{ post.title }}</td>
 					<td class="border-grey-light border hover:bg-gray-100 p-3">{{ post.body }}</td>
